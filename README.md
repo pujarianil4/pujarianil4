@@ -15,7 +15,7 @@ hi, i'm [Anil Pujari](https://anilpujari.me/), a passionate full stack web devel
 
 
 
-  <img align="right" alt="GIF" src="https://github.com/abhisheknaiidu/abhisheknaiidu/blob/master/code.gif?raw=true" width="440" height="270" />
+  <img align="right" alt="GIF" src="https://cdn.dribbble.com/users/1025838/screenshots/6220885/devguy3.gif" width="500" height="300" />
   
 - 💼 any freelance work? do reach, [email](mailto:pujarianil4@gmail.com) :)
 - 💬 ask me about anything, i am happy to help;
