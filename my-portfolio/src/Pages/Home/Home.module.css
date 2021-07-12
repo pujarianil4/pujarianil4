@@ -1,0 +1,11 @@
+.home{
+  position: relative;
+  width: 100%;
+}
+.home img{
+    width: 100%;
+}
+.title{
+    position: absolute;
+    top: 0;
+}
