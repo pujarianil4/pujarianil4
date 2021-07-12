@@ -1,0 +1,15 @@
+.btn{
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    font-size: 50px;
+    cursor: pointer;
+}
+@media (max-width:600px){
+    .btn{
+      display: none
+    }
+    .btn_div{
+        display: none;
+    }
+}
