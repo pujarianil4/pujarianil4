@@ -1,0 +1,125 @@
+.home{
+  position: relative;
+  width: 100%;
+
+}
+.title{
+ 
+  width: 99%;
+}
+.profile{
+  margin-left: 22%;
+  margin-top: 12%;
+  
+}
+.profile h2{
+  font-weight: 500;
+ letter-spacing: 5px;
+ font-size: 30px;
+}
+.light_profile_title h1{
+  font-size: 90px;
+  color: black;
+  margin:0px 0px;
+
+}
+.dark_profile_title h1{
+  font-size: 90px;
+  color: white;
+  margin: 0px 0px;
+}
+.plus_icon{
+  font-weight: 900;
+  margin: 0px;
+  position: relative;
+  top: 30px;
+}
+
+.light_title,.dark_title{
+  display: flex;
+position: relative;
+width: 73%;
+}
+.light_title h1{
+  margin: 0px;
+ 
+
+}
+
+.rib{
+  width: 0%;
+  height: 120px;
+  background-color: aqua;
+  position: absolute;  
+  transition: width 0.3s ease-in-out;
+
+}
+
+/* @keyframes rib{
+  from{width: 0%;}
+  50%{width: 57%;}
+  to{width: 0%;}
+} */
+
+/*  */
+.home img{
+    width: 100%;
+}
+.title{
+    position: absolute;
+    top: 0;
+}
+
+
+@media (max-width:600px){
+  .home{
+    width: 100%;
+    margin: auto;
+  }
+  .title{
+    width: 100%;
+  }
+  .profile{
+    margin: 0px;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 30%;
+    
+  }
+  .home img{
+    height: 100vh;
+  
+  }
+  .dark_profile_title h1{
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+  }
+  .light_profile_title h1{
+    font-size: 50px;
+    color: black;
+    margin:0px;
+  
+  }
+  .plus_icon{
+    font-weight: 900;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+  }
+
+  .rib{
+    width: 0%;
+    height: 67px;
+    background-color: aqua;
+    position: absolute;  
+    transition: width 0.3s ease-in-out;
+  
+  }
+
+  .light_title,.dark_title{
+    display: flex;
+  position: relative;
+  width: 75%;
+  }
+}
