@@ -65,6 +65,15 @@ width: 73%;
 .home img{
     width: 100%;
 }
+.dark_img,.white_img{
+  display: none;
+  width: 0%;
+  transition: width 3s ease-in-out;
+}
+.dark_img_active,.white_img_active{
+ width: 100%;
+ display: block;
+}
 .title{
     position: absolute;
     top: 0;
@@ -91,12 +100,12 @@ width: 73%;
   
   }
   .dark_profile_title h1{
-    font-size: 50px;
+    font-size: 240%;
     color: white;
     margin: 0px;
   }
   .light_profile_title h1{
-    font-size: 50px;
+    font-size: 240%;
     color: black;
     margin:0px;
   
@@ -120,6 +129,6 @@ width: 73%;
   .light_title,.dark_title{
     display: flex;
   position: relative;
-  width: 75%;
+  width: 92%;
   }
 }

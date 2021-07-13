@@ -8,7 +8,7 @@ import TopBar from "../../Components/TopBar/TopBar";
 
 const values = ["useDencrypt", "Customizable", "React Hook", "Text Effect"];
 const Home = () => {
-  const title_list = ["Designer", "Trader", "Choreographer"];
+  const title_list = ["","Designer","", "Trader","", "Choreographer"];
   const { result, dencrypt } = useDencrypt();
   const [theme, setTheme] = useState("light");
   const [title, setTitle] = useState(0);
@@ -35,7 +35,7 @@ const Home = () => {
       setTimeout(() => {
         setTitle(i);
       }, 100);
-
+     
       i = i === title_list.length - 1 ? 0 : i + 1;
     }, 2000);
   };
@@ -46,7 +46,7 @@ const Home = () => {
   }, []);
   return (
     <div style={theme === "dark" ? dark : light} className={styles.home}>
-      <img src={bg} alt="background" />
+      { <img src={bg} alt="background" /> }
       <div className={styles.title}>
         <Navbar theme={theme} handleTopBar={handleTopBar} topbar={topbar} />
         <ThemeButton theme={theme} setTheme={setTheme} />
@@ -69,7 +69,7 @@ const Home = () => {
                 theme === "light" ? styles.light_title : styles.dark_title
               }
             >
-              <AddIcon className={styles.plus_icon} style={{ fontSize: 70 }} />
+              <AddIcon className={styles.plus_icon} style={{ fontSize: 60 }} />
               <h1> {title_list[title]} </h1>
               <div
                 style={
