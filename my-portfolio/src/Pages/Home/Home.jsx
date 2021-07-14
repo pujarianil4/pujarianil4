@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 import AddIcon from "@material-ui/icons/Add";
 import { useDencrypt } from "use-dencrypt-effect";
 import TopBar from "../../Components/TopBar/TopBar";
+import About from "../../Components/About/About";
 
 const values = ["useDencrypt", "Customizable", "React Hook", "Text Effect"];
 const Home = () => {
@@ -45,14 +46,13 @@ const Home = () => {
     return () => clearInterval(action);
   }, []);
   return (
+    <>
     <div style={theme === "dark" ? dark : light} className={styles.home}>
       { <img src={bg} alt="background" /> }
       <div className={styles.title}>
         <Navbar theme={theme} handleTopBar={handleTopBar} topbar={topbar} />
         <ThemeButton theme={theme} setTheme={setTheme} />
-        <div className={styles.bar}>
-          
-        </div>
+     
         <div className={styles.profile}>
           <h2 >{result}</h2>
         
@@ -83,9 +83,14 @@ const Home = () => {
           </div>
         </div>
       </div>
+         {/* About */}
+    
 
-      <TopBar theme={theme} setTheme={setTheme} handleTopBar={handleTopBar} topbar={topbar}/>
+      
     </div>
+      <About theme={theme}/>
+      <TopBar theme={theme} setTheme={setTheme} handleTopBar={handleTopBar} topbar={topbar}/>
+      </>
   );
 };
 

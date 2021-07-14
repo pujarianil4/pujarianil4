@@ -1,19 +1,20 @@
 .dark_topbar{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: black;
     position: fixed;
-    top: -100vh;
+    top: -100%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 .light_topbar{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: white;
     position: fixed;
-    top: -100vh;
+    top: -100%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
@@ -23,7 +24,7 @@
     display: none;
    position: absolute;
     right:20px;
-    top: 580px;
+    top: 600px;
     font-size: 40px;
     cursor: pointer;
   z-index: 1;

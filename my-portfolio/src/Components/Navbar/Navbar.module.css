@@ -2,6 +2,7 @@
 {
 position: fixed;
 top: 40px;
+z-index: 1;
 }
 .navbar div h3{
     transform: rotate(270deg);
@@ -43,6 +44,12 @@ top: 40px;
      display: none;
  }
 
+ .social_icon{
+     margin: 15px 60px;
+ }
+ .social_icon:hover{
+     color: aqua;
+ }
  @media (max-width:600px){
   .navbar{
       display: none;

@@ -95,6 +95,11 @@ width: 73%;
     margin-top: 30%;
     
   }
+  .profile h2{
+    font-weight: 500;
+   letter-spacing: 5px;
+   font-size: 25px;
+  }
   .home img{
     height: 100vh;
   
@@ -119,10 +124,10 @@ width: 73%;
 
   .rib{
     width: 0%;
-    height: 67px;
+    height: 50px;
     background-color: aqua;
     position: absolute;  
-    transition: width 0.3s ease-in-out;
+    transition: width 0.5s ease-in-out;
   
   }
 
