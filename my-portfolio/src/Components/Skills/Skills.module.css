@@ -1,0 +1,129 @@
+
+.skills{
+ width: 80%;
+    margin: auto;
+   
+}
+.skills h1{
+    text-align: center;
+}
+.light_cards{
+    display: grid;
+   
+    width: 85%;
+ 
+    margin: auto;
+  grid-template-columns: 170px 170px 170px 170px 170px;
+  grid-template-rows:  170px 170px 170px 170px 170px;
+
+}
+
+.dark_cards{
+    display: grid;
+ 
+    width: 85%;
+   
+    margin: auto;
+  grid-template-columns: 170px 170px 170px 170px 170px;
+  grid-template-rows:  170px 170px 170px 170px 170px;
+}
+.dark_cards div{
+    border: 2px solid aqua;
+}
+.light_cards div{
+    border: 2px solid aqua;
+}
+.grid_item {
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .grid_item img{
+      width: 100%;
+  }
+  .dark_rib{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0PX;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(5, 75, 75);
+    opacity: 0;
+    animation: Rib 3s infinite;
+    transition: opacity 0.2s ease-in-out;
+    display: grid;
+    place-items: center;
+
+}
+.light_rib{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0PX;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(15, 199, 199);
+    opacity: 0;
+    animation: Rib 3s infinite;
+    transition: opacity 0.2s ease-in-out;
+    display: grid;
+    place-items: center;
+
+}
+.dark_cards div:hover .light_rib{
+  opacity: 1;
+}
+.light_cards div:hover .dark_rib{
+    opacity: 1;
+}
+
+.light_rib h2{
+    font-size: 20px;
+    color: black
+    }
+
+.dark_rib h2{
+font-size: 20px;
+color: white;
+}
+/* @keyframes Rib{
+    from {
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+} */
+
+  @media (max-width:600px){
+     
+    .skills{
+        width: 90%;
+           margin: auto;
+          
+       }
+    .light_cards{
+        display: grid;
+       
+        width: 100%;
+       
+        margin: auto;
+      grid-template-columns: 160px 160px ;
+      grid-template-rows:  160px 160px ;
+    }
+    
+    .dark_cards{
+        display: grid;
+       
+        width: 100%;
+        margin: auto;
+      grid-template-columns: 160px 160px ;
+      grid-template-rows:  160px 160px ;
+    }
+  }
