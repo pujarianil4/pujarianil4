@@ -21,8 +21,12 @@ const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar}) => {
     handleTopBar()
     setTheme(tm)
   }
-
+  const style =
+  theme === "dark"
+    ? { backgroundColor: "#111111",color:"white" }
+    : { backgroundColor: "#F2F2F2",color:"#616161" };
     return (
+      <div style={style}>
         <div style={topbar?{top:"0px"}:{}} className={theme==="dark"?styles.dark_topbar:styles.light_topbar}>
                 {theme === "dark" ? (
           <FormatColorTextIcon
@@ -54,6 +58,7 @@ const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar}) => {
             } 
           
            
+        </div>
         </div>
     );
 },areEqual)

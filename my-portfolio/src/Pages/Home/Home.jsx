@@ -6,8 +6,9 @@ import AddIcon from "@material-ui/icons/Add";
 import { useDencrypt } from "use-dencrypt-effect";
 import TopBar from "../../Components/TopBar/TopBar";
 import About from "../../Components/About/About";
+import Skills from "../../Components/Skills/Skills";
 
-const values = ["useDencrypt", "Customizable", "React Hook", "Text Effect"];
+
 const Home = () => {
   const title_list = ["","Designer","", "Trader","", "Choreographer"];
   const { result, dencrypt } = useDencrypt();
@@ -43,11 +44,18 @@ const Home = () => {
   useEffect(() => {
     interval();
     dencrypt("I'M ANIL PUJARI");
+if(theme==="dark"){
+  document.body.style.backgroundColor= "#111111"
+}else{
+  document.body.style.backgroundColor= "#F2F2F2"
+}
+   
     return () => clearInterval(action);
-  }, []);
+  }, [theme]);
   return (
     <>
-    <div style={theme === "dark" ? dark : light} className={styles.home}>
+    <div className={styles.container} style={theme === "dark" ? dark : light}>
+    <div style={theme === "dark" ? dark : light}  className={styles.home}>
       { <img src={bg} alt="background" /> }
       <div className={styles.title}>
         <Navbar theme={theme} handleTopBar={handleTopBar} topbar={topbar} />
@@ -89,7 +97,11 @@ const Home = () => {
       
     </div>
       <About theme={theme}/>
+      <Skills theme={theme}/>
+
+
       <TopBar theme={theme} setTheme={setTheme} handleTopBar={handleTopBar} topbar={topbar}/>
+      </div>
       </>
   );
 };
