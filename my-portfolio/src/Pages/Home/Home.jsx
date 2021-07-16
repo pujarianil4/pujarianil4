@@ -7,6 +7,7 @@ import { useDencrypt } from "use-dencrypt-effect";
 import TopBar from "../../Components/TopBar/TopBar";
 import About from "../../Components/About/About";
 import Skills from "../../Components/Skills/Skills";
+import Project from "../../Components/Projects/Project";
 
 
 const Home = () => {
@@ -98,7 +99,7 @@ if(theme==="dark"){
     </div>
       <About theme={theme}/>
       <Skills theme={theme}/>
-
+      <Project theme={theme}/>
 
       <TopBar theme={theme} setTheme={setTheme} handleTopBar={handleTopBar} topbar={topbar}/>
       </div>
