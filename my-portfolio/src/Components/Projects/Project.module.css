@@ -1,0 +1,24 @@
+.container{
+
+}
+.projects{
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+}
+.projects{
+    display: flex;
+   
+    flex-wrap: wrap;
+   
+}
+.projects div{
+    position: relative;
+    margin: 20px 22px;
+    
+}
+@media (max-width:600px){
+    .projects{
+        width: 100%;
+    }
+}

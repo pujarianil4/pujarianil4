@@ -64,7 +64,7 @@
     .info div img{
         width: 80%;
        margin-left: 10px;
-        border: 2px dotted aqua;
+        border: 2px solid aqua;
     }
   
 }
