@@ -8,13 +8,16 @@ import TopBar from "../../Components/TopBar/TopBar";
 import About from "../../Components/About/About";
 import Skills from "../../Components/Skills/Skills";
 import Project from "../../Components/Projects/Project";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const Home = () => {
   const title_list = ["","Designer","", "Trader","", "Choreographer"];
   const { result, dencrypt } = useDencrypt();
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
+  const theme=useSelector((state)=>state.theme)
   const [title, setTitle] = useState(0);
+  const dispatch= useDispatch()
   const dark = {
     color: "white",
   };
@@ -43,6 +46,7 @@ const Home = () => {
     }, 2000);
   };
   useEffect(() => {
+    console.log(theme);
     interval();
     dencrypt("I'M ANIL PUJARI");
 if(theme==="dark"){
@@ -60,7 +64,7 @@ if(theme==="dark"){
       { <img src={bg} alt="background" /> }
       <div className={styles.title}>
         <Navbar theme={theme} handleTopBar={handleTopBar} topbar={topbar} />
-        <ThemeButton theme={theme} setTheme={setTheme} />
+        <ThemeButton theme={theme}  />
      
         <div className={styles.profile}>
           <h2 >{result}</h2>
@@ -101,7 +105,7 @@ if(theme==="dark"){
       <Skills theme={theme}/>
       <Project theme={theme}/>
 
-      <TopBar theme={theme} setTheme={setTheme} handleTopBar={handleTopBar} topbar={topbar}/>
+      <TopBar theme={theme}  handleTopBar={handleTopBar} topbar={topbar}/>
       </div>
       </>
   );

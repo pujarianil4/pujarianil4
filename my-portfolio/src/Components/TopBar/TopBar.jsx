@@ -4,6 +4,8 @@ import CloseIcon from '@material-ui/icons/Close';
 import FormatColorTextIcon from "@material-ui/icons/FormatColorText";
 import FlareIcon from '@material-ui/icons/Flare';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
+import { useDispatch } from 'react-redux';
+import { themeHandler } from '../../Redux/Action';
 const areEqual=(prev,next)=>{
 
     if(prev.topbar===next.topbar ){
@@ -17,9 +19,11 @@ const areEqual=(prev,next)=>{
 
 const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar}) => {
 
+  const dispatch=useDispatch()
   const handletheme=(tm)=>{
     handleTopBar()
-    setTheme(tm)
+    console.log("funtion");
+    dispatch(themeHandler())
   }
   const style =
   theme === "dark"
