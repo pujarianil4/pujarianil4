@@ -3,12 +3,20 @@ import styles from "./ThemeButton.module.css"
 import FlareIcon from '@material-ui/icons/Flare';
 import { dark } from '@material-ui/core/styles/createPalette';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
+import { useDispatch } from 'react-redux';
+import { themeHandler } from '../../Redux/Action';
 const ThemeButton = ({theme,setTheme}) => {
+    const dispatch=useDispatch()
+
+    const handletheme=()=>{
+        console.log("function");
+        dispatch(themeHandler())
+    }
     return (
          <>
          <div className={styles.btn_div}>
-           {theme==="light"? <FlareIcon fontSize="large" className={styles.btn} onClick={()=> setTheme(theme==="dark"?"white":"dark")}/>
-       : <NightsStayIcon fontSize="large" className={styles.btn} onClick={()=> setTheme(theme==="dark"?"light":"dark")} />
+           {theme==="light"? <FlareIcon fontSize="large" className={styles.btn} onClick={handletheme}/>
+       : <NightsStayIcon fontSize="large" className={styles.btn} onClick={ handletheme} />
             } 
             </div>
        </>
