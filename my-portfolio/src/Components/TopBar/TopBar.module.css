@@ -3,7 +3,7 @@
     width: 100%;
     background-color: black;
     position: fixed;
-    top: -100%;
+    top: -120%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     width: 100%;
     background-color: white;
     position: fixed;
-    top: -100%;
+    top: -120%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;

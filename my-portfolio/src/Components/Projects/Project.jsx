@@ -9,7 +9,12 @@ const Project = ({theme}) => {
     const style=theme==="dark"?{color:"white"}:{color:"white"}
     return (
         <div style={style}>
+          <div className={styles.heading}>
+          <h1 style={theme === "dark" ? {} : { color: "black" }}>Projects</h1>
+          </div>
+          
             <div className={styles.projects}>
+           
               <div>
              <ProjectCard>
              <img src="strawberry.png" alt="" />

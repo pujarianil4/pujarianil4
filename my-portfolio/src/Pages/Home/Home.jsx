@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import ThemeButton from "../../Components/ThemeButton/ThemeButton";
 import styles from "./Home.module.css";
@@ -9,6 +9,8 @@ import About from "../../Components/About/About";
 import Skills from "../../Components/Skills/Skills";
 import Project from "../../Components/Projects/Project";
 import { useDispatch, useSelector } from "react-redux";
+import MouseMove from "../../Components/ScrollTop/ScrollTop";
+
 
 
 const Home = () => {
@@ -17,7 +19,25 @@ const Home = () => {
   // const [theme, setTheme] = useState("light");
   const theme=useSelector((state)=>state.theme)
   const [title, setTitle] = useState(0);
+  const [rib, setRib] = useState(true);
+  const [topbar,setTopbar]=useState(false)
   const dispatch= useDispatch()
+// section referance
+const aboutSection= useRef(null)
+const projectSection=useRef(null)
+
+const handleScroll=(section)=>{
+if(section==="about"){
+  window.scrollTo({top:aboutSection.current.offsetTop,behavior:"smooth"})
+}
+if(section==="projects"){
+  window.scrollTo({top:projectSection.current.offsetTop,behavior:"smooth"})
+}
+ 
+}
+
+//section 
+
   const dark = {
     color: "white",
   };
@@ -25,11 +45,12 @@ const Home = () => {
     color: "#616161",
   };
   const bg = theme === "dark" ? "dark.png" : "white.png";
-  const [rib, setRib] = useState(true);
-  const [topbar,setTopbar]=useState(false)
+
    const handleTopBar=()=>{
       setTopbar(!topbar)
    }
+
+   
 
 
   var action;
@@ -60,12 +81,13 @@ if(theme==="dark"){
   return (
     <>
     <div className={styles.container} style={theme === "dark" ? dark : light}>
+
     <div style={theme === "dark" ? dark : light}  className={styles.home}>
       { <img src={bg} alt="background" /> }
       <div className={styles.title}>
-        <Navbar theme={theme} handleTopBar={handleTopBar} topbar={topbar} />
+        <Navbar theme={theme} handleTopBar={handleTopBar} handleScroll={handleScroll} topbar={topbar} />
         <ThemeButton theme={theme}  />
-     
+       <MouseMove/>
         <div className={styles.profile}>
           <h2 >{result}</h2>
         
@@ -101,10 +123,15 @@ if(theme==="dark"){
 
       
     </div>
-      <About theme={theme}/>
+  
+    <section ref={aboutSection}>
+    <About theme={theme}/>
+    </section>
+    
       <Skills theme={theme}/>
+      <section ref={projectSection}>
       <Project theme={theme}/>
-
+      </section>
       <TopBar theme={theme}  handleTopBar={handleTopBar} topbar={topbar}/>
       </div>
       </>

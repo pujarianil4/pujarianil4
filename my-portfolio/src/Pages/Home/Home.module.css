@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .home{
   position: relative;
   width: 100%;
