@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
   
 });
-const About = ({ theme }) => {
+const About = ({ theme ,handleScroll}) => {
   const { result, dencrypt } = useDencrypt();
     const classes=useStyles()
   const style =
@@ -49,8 +49,8 @@ const About = ({ theme }) => {
             code quality of the things I build.
           </p>
           <div className={theme==="dark"?styles.dark_buttons:styles.light_buttons}>
-          <Button variant="contained" startIcon={<SendIcon/>}>Send me a message </Button>
-        <a href="https://masai-course.s3.ap-south-1.amazonaws.com/users/712/submissions/112204/265514/f437b22ff9912a4519099850f6da70c1/Anil_Pujari_Resume%20.pdf" target="_blank"  download> <Button variant="contained" className={theme==="dark"?styles.send_light_class:styles.send_dark_class} startIcon={<CloudDownloadIcon/>}>Download My Resume </Button></a> 
+          <Button onClick={()=>handleScroll("contact")} startIcon={<SendIcon/>}>Send me a message </Button>
+        <a href="https://masai-course.s3.ap-south-1.amazonaws.com/users/712/submissions/112204/265514/f437b22ff9912a4519099850f6da70c1/Anil_Pujari_Resume%20.pdf" target="_blank"  download> <Button  className={theme==="dark"?styles.send_light_class:styles.send_dark_class} startIcon={<CloudDownloadIcon/>}>Download My Resume </Button></a> 
           </div >
            
           </div>

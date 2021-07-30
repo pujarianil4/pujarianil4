@@ -150,10 +150,11 @@
         transform-origin: right;
     }
 }
-
+*/
 @media (max-width:600px){
-    .box{
-        width: 80%;
-        margin: 0px;
+    .projects{
+       
+        height: 350vh;
     }
-} */
+} 
+

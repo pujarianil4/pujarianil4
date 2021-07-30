@@ -3,10 +3,12 @@
    
     width: 80%;
     margin: auto;
-    
+   
+    margin-bottom: 50PX;
 }
 .about h1{
     margin: 0px 2%;
+    font-size: 40px;
 }
 .info{
     display: flex;
@@ -42,17 +44,19 @@
     width: 500px;
 }
 .dark_buttons button{
-    margin: 10px;
-    background-color: white;
+    margin: 5px 20px;
+   
     font-weight: 600;
     text-decoration: none;
+   color: aqua;
 }
 .light_buttons button{
-    margin: 10px;
-    background-color: rgb(100, 98, 98);
+    margin: 5px 20px;
+    
     font-weight: 600;
-    color: white;
+    color: black;
     text-decoration: none;
+    
 }
 a{
     text-decoration: none;
@@ -90,11 +94,11 @@ a{
     }
     .info div img{
         width: 80%;
-       margin-left: 50px;
+       margin-left: 10%;
         border: 2px solid aqua;
     }
     .light_buttons button,.dark_buttons button{
-        width: 100%;
+        width: 90%;
     }
   
 }

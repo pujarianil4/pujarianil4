@@ -37,7 +37,7 @@ const Navbar = ({ theme, topbar,handleTopBar,handleScroll }) => {
           <div className={styles.line}></div>
           <h3 >About</h3>
         </div>
-        <div>
+        <div onClick={()=>handleScroll("contact")}>
           <div className={styles.line}></div>
           <h3>Contact</h3>
         </div>
