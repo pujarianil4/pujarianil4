@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import SendIcon from '@material-ui/icons/Send';
 
 import TextFieldMui from "@material-ui/core/TextField";
-
+import {useSelector} from "react-redux"
 
 const useStyle = makeStyles({
   email: {
@@ -88,7 +88,12 @@ const Contact = () => {
   const classes = useStyle();
   const [email,setEmail]=useState("")
    const [Error,setError]=useState(false)
+   const theme= useSelector((state)=> state.theme)
 
+   const style =
+   theme === "dark"
+     ? { backgroundColor: "#111111", color: "white" }
+     : { backgroundColor: "#F2F2F2", color: "#616161" };
    useEffect(()=>{
      if(email.length>0&&email.includes("@")&&email.includes(".")){
          setError(false)
@@ -99,8 +104,8 @@ const Contact = () => {
      }
    },[email])
   return (
-    <div>
-      <div className={styles.contact}>
+    <div >
+      <div style={style} className={styles.contact}>
         <h1>Say Hello</h1>
         <Divider />
         <div className={styles.form}>

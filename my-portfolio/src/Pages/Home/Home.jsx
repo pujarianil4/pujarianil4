@@ -141,7 +141,7 @@ if(theme==="dark"){
           <Contact/>
         </section>
 
-      <TopBar theme={theme}  handleTopBar={handleTopBar} topbar={topbar}/>
+      <TopBar theme={theme}    handleTopBar={handleTopBar} topbar={topbar} handleScroll={handleScroll}/>
       </div>
       </>
   );

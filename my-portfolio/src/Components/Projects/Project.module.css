@@ -118,9 +118,15 @@
 }
 .github{
     display: flex;
-    width: 100px;
-    margin:  10px auto;
-    cursor: pointer;
+   justify-content: center;
+}
+.github button{
+    margin: 10px;
+    color: gray;
+}
+.github button:hover{
+    background-color: aqua;
+    color: black;
 }
 .github h3{
     margin: 0px 5px;
@@ -154,7 +160,7 @@
 @media (max-width:600px){
     .projects{
        
-        height: 350vh;
+        height: 320vh;
     }
 } 
 
