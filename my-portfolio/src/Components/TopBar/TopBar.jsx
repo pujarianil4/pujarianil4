@@ -17,20 +17,26 @@ const areEqual=(prev,next)=>{
    
 }
 
-const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar}) => {
+const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar,handleScroll}) => {
 
   const dispatch=useDispatch()
   const handletheme=(tm)=>{
     handleTopBar()
-    console.log("funtion");
+ 
     dispatch(themeHandler())
   }
+const handleBar=(item)=>{
+  handleScroll(item)
+  handleTopBar()
+}
+
   const style =
   theme === "dark"
     ? { backgroundColor: "#111111",color:"white" }
     : { backgroundColor: "#F2F2F2",color:"#616161" };
     return (
-      <div style={style}>
+      <div  className={styles.container} style={style}>
+        
         <div style={topbar?{top:"0px"}:{}} className={theme==="dark"?styles.dark_topbar:styles.light_topbar}>
                 {theme === "dark" ? (
           <FormatColorTextIcon
@@ -56,13 +62,24 @@ const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar}) => {
             onClick={handleTopBar}
           />
         )}
-       
-           {theme==="light"? <FlareIcon fontSize="large" className={styles.btn} onClick={()=>  handletheme("dark")}/>
+
+     
+      
+        {theme==="light"? <FlareIcon fontSize="large" className={styles.btn} onClick={()=>  handletheme("dark")}/>
        : <NightsStayIcon fontSize="large" className={styles.btn} onClick={()=> handletheme("light")} />
             } 
-          
+        
+       
+        <div className={styles.list}>
+          <h2 onClick={()=>handleBar("about") }>About</h2>
+          <h2 onClick={()=>handleBar("projects")}>Project</h2>
+          <h2 onClick={()=>handleBar("contact")}>Contact</h2>
+        </div>
+       
            
         </div>
+     
+      
         </div>
     );
 },areEqual)

@@ -4,7 +4,7 @@ import { THEME_HANDLER } from "./ActionTypes";
 
 
 const init={
-    theme: JSON.parse(localStorage.getItem("theme")) || "light"
+    theme: JSON.parse(localStorage.getItem("theme")) || "dark"
 }
 
 export const Reducer=(state=init,action)=>{

@@ -1,15 +1,18 @@
 .dark_box{
     width: 420px;
     height: 450px;
-    position: absolute;
+ 
     box-shadow: 0 0 10px #001e2d;
     background-color: #001e2d;
     box-sizing: border-box;
     overflow: hidden;
   
     border: 2px solid rgba(0, 0, 0, .5);
+    
     margin: 10px;
-    cursor: pointer;
+    
+  
+  
 }
 .dark_box::before{
     content: "";
@@ -20,6 +23,7 @@
     height: 100%;
     background: rgba(255, 255, 255, .1);
     transition: 0.5s;
+   
 }
 
 
@@ -29,12 +33,17 @@
 }
 .dark_box .content{
     border: 2px solid #ffeb3b;
+ 
+    
     height: 90%;
     margin: 10px;
     padding: 10px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+   
 }
+
+
 .content img{
     width: 70%;
 }
@@ -46,7 +55,7 @@
 .light_box{
     width: 420px;
     height: 450px;
-    position: absolute;
+   
    
     background-color: rgba(236, 250, 250, 0);
     box-sizing: border-box;
@@ -178,10 +187,10 @@
 @media (max-width:600px){
     .dark_box{
         width: 80%;
-        margin: 20px;
+        margin: 5px;
     }
     .light_box{
         width: 80%;
-        margin: 20px;
+        margin: 5px;
     }
 } 

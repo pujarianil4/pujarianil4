@@ -11,8 +11,25 @@
 
 height: 280px;
 }
-.proficiency h1{
+.heading{
+  
+  margin: auto;
+}
+.heading h1{
   text-align: center;
+  border-bottom: 2px solid aqua;
+  width: 200px;
+  margin: auto;
+}
+.heading1{
+ 
+  margin: auto;
+}
+.heading1 h1{
+  text-align: center;
+  border-bottom: 2px solid aqua;
+  width: 220px;
+  margin: auto;
 }
 .skills h1{
     text-align: center;
@@ -236,7 +253,8 @@ color: white;
     .skills{
         width: 90%;
            margin: auto;
-         height: 150vh;
+         height: 132vh;
+         
        }
        .proficiency{
          height: 65vh;
@@ -281,5 +299,15 @@ color: white;
       margin: auto;
     grid-template-columns: 160px 160px ;
     grid-template-rows:  160px 160px ;
+  }
+
+  .heading1,.heading{
+    width: 100%;
+    margin: auto;
+  }
+  .heading1 h1,.heading h1{
+    text-align: center;
+    border-bottom: 2px solid aqua;
+    margin: auto;
   }
   }

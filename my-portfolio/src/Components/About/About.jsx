@@ -3,7 +3,8 @@ import styles from "./About.module.css";
 import SendIcon from '@material-ui/icons/Send';
 import { Button }from "@material-ui/core"
 import { useDencrypt } from "use-dencrypt-effect";
-
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import {Link} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -14,10 +15,15 @@ const useStyles = makeStyles({
   send_light:{
     fontWeight:600,
       color: "white",
-      backgroundColor:"#111111"
-  }
+      backgroundColor:"#111111",
+      '&:hover': {
+        backgroundColor:"#555454",
+        color: "white"
+      }
+  },
+  
 });
-const About = ({ theme }) => {
+const About = ({ theme ,handleScroll}) => {
   const { result, dencrypt } = useDencrypt();
     const classes=useStyles()
   const style =
@@ -42,7 +48,11 @@ const About = ({ theme }) => {
             interfaces. I take great care in the experience, architecture, and
             code quality of the things I build.
           </p>
-            <Button variant="contained" className={theme==="dark"?classes.send_light:classes.send_dark} startIcon={<SendIcon/>}>Send me a message </Button>
+          <div className={theme==="dark"?styles.dark_buttons:styles.light_buttons}>
+          <Button onClick={()=>handleScroll("contact")} startIcon={<SendIcon/>}>Send me a message </Button>
+        <a href="https://masai-course.s3.ap-south-1.amazonaws.com/users/712/submissions/112204/265514/f437b22ff9912a4519099850f6da70c1/Anil_Pujari_Resume%20.pdf" target="_blank"  download> <Button  className={theme==="dark"?styles.send_light_class:styles.send_dark_class} startIcon={<CloudDownloadIcon/>}>Download My Resume </Button></a> 
+          </div >
+           
           </div>
           <div>
               <img src="profile.jpg" alt="profile" />
@@ -54,3 +64,5 @@ const About = ({ theme }) => {
 };
 
 export default About;
+
+// className={theme==="dark"?classes.send_light:classes.send_dark}

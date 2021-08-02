@@ -14,7 +14,10 @@ const Skills = ({ theme }) => {
   return (
     <div style={style} className={styles.container}>
       <div className={styles.skills}>
+        <div className={styles.heading}>
         <h1 style={theme === "dark" ? {} : { color: "black" }}>{result}</h1>
+        </div>
+       
 
         <div
           className={theme === "dark" ? styles.light_cards : styles.dark_cards}
@@ -84,7 +87,10 @@ const Skills = ({ theme }) => {
 
 
       <div className={styles.proficiency}>
+        <div  className={styles.heading1}>
         <h1 style={theme === "dark" ? {} : { color: "black" }}>Proficiencies</h1>
+        </div>
+       
 
         <div
           className={theme === "dark" ? styles.light_cards_pro : styles.dark_cards_pro}

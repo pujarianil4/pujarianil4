@@ -7,7 +7,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { Link } from "react-router-dom";
 
-const Navbar = ({ theme, topbar,handleTopBar }) => {
+const Navbar = ({ theme, topbar,handleTopBar,handleScroll }) => {
 
   const handleSocialMedia=(link)=>{
     window.open(link)
@@ -29,15 +29,15 @@ const Navbar = ({ theme, topbar,handleTopBar }) => {
           />
         )}
 
-        <div>
+        <div onClick={()=>handleScroll("projects")}>
           <div className={styles.line}></div>
-          <h3>Projects</h3>
+          <h3 >Projects</h3>
         </div>
-        <div>
+        <div onClick={()=>handleScroll("about")}>
           <div className={styles.line}></div>
-          <h3>About</h3>
+          <h3 >About</h3>
         </div>
-        <div>
+        <div onClick={()=>handleScroll("contact")}>
           <div className={styles.line}></div>
           <h3>Contact</h3>
         </div>

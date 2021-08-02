@@ -1,9 +1,12 @@
+.container{
+    overflow: hidden;
+}
 .dark_topbar{
     height: 100%;
     width: 100%;
     background-color: black;
     position: fixed;
-    top: -100%;
+    top: -200%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
@@ -14,21 +17,39 @@
     width: 100%;
     background-color: white;
     position: fixed;
-    top: -100%;
+    top: -200%;
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
 }
+.list{
+    position: absolute;
+   
+
+    top: 20%;
+    width: 100%;
+}
+.list h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 
 .btn{
-    display: none;
+    
    position: absolute;
-    right:20px;
-    top: 620px;
+    right:0px;
+    top: 600px;
     font-size: 40px;
     cursor: pointer;
   z-index: 1;
 }
+
+.themeChanger{
+    position: absolute;
+    left: 0;
+}
+
 
 @media (max-width:600px){
 

@@ -1,11 +1,19 @@
-.container{
 
-}
 .projects{
     width: 70%;
     margin: auto;
     height: 1000px;
   
+}
+.heading{
+   
+    text-align: center;
+}
+.heading h1{
+    font-size: 32px;
+    border-bottom: 2px solid aqua;
+    width: 150px;
+    margin: auto;
 }
 .projects{
     display: flex;
@@ -110,9 +118,15 @@
 }
 .github{
     display: flex;
-    width: 100px;
-    margin:  10px auto;
-    cursor: pointer;
+   justify-content: center;
+}
+.github button{
+    margin: 10px;
+    color: gray;
+}
+.github button:hover{
+    background-color: aqua;
+    color: black;
 }
 .github h3{
     margin: 0px 5px;
@@ -142,10 +156,11 @@
         transform-origin: right;
     }
 }
-
+*/
 @media (max-width:600px){
-    .box{
-        width: 80%;
-        margin: 0px;
+    .projects{
+       
+        height: 320vh;
     }
-} */
+} 
+
