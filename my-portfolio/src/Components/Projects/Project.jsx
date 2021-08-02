@@ -5,18 +5,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import {Link} from "react-router-dom"
 import { Button, Tooltip } from '@material-ui/core';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import VideoModel from '../VideoModel/VideoModel';
 
-const Project = ({theme}) => {
+const Project = ({theme,handleLink}) => {
     const style=theme==="dark"?{color:"white"}:{color:"white"}
     return (
         <div style={style}>
+              
           <div className={styles.heading}>
           <h1 style={theme === "dark" ? {} : { color: "black" }}>Projects</h1>
+        
           </div>
           
             <div className={styles.projects}>
           
               <div>
+             
              <ProjectCard>
              <img src="strawberry.png" alt="" />
         <h2>Strawberrynet Clone</h2>
@@ -24,8 +28,9 @@ const Project = ({theme}) => {
         Strawberrynet.com is an e-commerce website
 which sales cosmetic products online.
         </p>
+       
    <div   className={styles.github}>
-   <Button startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/J3xHwEOKnYk")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/makkardeepak25/strawberry_net_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -62,7 +67,7 @@ which sales cosmetic products online.
 invoicing web application.
         </p>
         <div   className={styles.github}>
-   <Button startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/7XjPueD5zUQ")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/pujarianil4/getharvest_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -93,7 +98,7 @@ invoicing web application.
 web application.
         </p>
         <div   className={styles.github}>
-   <Button startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("orbits")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/nrjrwt0/Orbitz-clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -124,7 +129,7 @@ web application.
 India.
         </p>
         <div   className={styles.github}>
-   <Button startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("hotstar")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/pujarianil4/Disneyplus_Hotstar_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        

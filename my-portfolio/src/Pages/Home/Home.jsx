@@ -11,6 +11,7 @@ import Project from "../../Components/Projects/Project";
 import { useDispatch, useSelector } from "react-redux";
 import MouseMove from "../../Components/ScrollTop/ScrollTop";
 import Contact from "../../Components/Contact/Contact";
+import VideoModel from "../../Components/VideoModel/VideoModel";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
   const [title, setTitle] = useState(0);
   const [rib, setRib] = useState(true);
   const [topbar,setTopbar]=useState(false)
+  const [link,setLink]=useState(false)
   const dispatch= useDispatch()
 // section referance
 const aboutSection= useRef(null)
@@ -54,6 +56,9 @@ if(section==="contact"){
       setTopbar(!topbar)
    }
 
+   const handleLink=(link)=>{
+      setLink(link)
+   }
    
 
 
@@ -92,6 +97,7 @@ if(theme==="dark"){
         <Navbar theme={theme} handleTopBar={handleTopBar} handleScroll={handleScroll} topbar={topbar} />
         <ThemeButton theme={theme}  />
        <MouseMove/>
+       <VideoModel link={link} handleLink={handleLink}/>
         <div className={styles.profile}>
           <h2 >{result}</h2>
         
@@ -134,7 +140,7 @@ if(theme==="dark"){
     
       <Skills theme={theme}/>
       <section ref={projectSection}>
-      <Project theme={theme}/>
+      <Project theme={theme} handleLink={handleLink}/>
       </section>
 
         <section ref={contactSection}>
