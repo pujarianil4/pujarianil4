@@ -30,7 +30,7 @@ which sales cosmetic products online.
         </p>
        
    <div   className={styles.github}>
-   <Button onClick={()=> handleLink("https://youtu.be/J3xHwEOKnYk")} startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/7oi1MXtwcAk")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/makkardeepak25/strawberry_net_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -67,7 +67,7 @@ which sales cosmetic products online.
 invoicing web application.
         </p>
         <div   className={styles.github}>
-   <Button onClick={()=> handleLink("https://youtu.be/7XjPueD5zUQ")} startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/6sIZpGy87oE")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/pujarianil4/getharvest_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -98,7 +98,7 @@ invoicing web application.
 web application.
         </p>
         <div   className={styles.github}>
-   <Button onClick={()=> handleLink("orbits")} startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/xHpqWov5meI")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/nrjrwt0/Orbitz-clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
@@ -129,7 +129,7 @@ web application.
 India.
         </p>
         <div   className={styles.github}>
-   <Button onClick={()=> handleLink("hotstar")} startIcon={ <VisibilityIcon/>}>View</Button>
+   <Button onClick={()=> handleLink("https://youtu.be/7VpVCFdl-Qs")} startIcon={ <VisibilityIcon/>}>View</Button>
        <a href="https://github.com/pujarianil4/Disneyplus_Hotstar_clone" target="_blank"> <Button startIcon={ <GitHubIcon />}>Github</Button></a>
         </div>
        
