@@ -4,7 +4,7 @@
 .dark_topbar{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #111111;
     position: fixed;
     top: -200%;
     transition: top 0.3s ease-in-out;
@@ -33,12 +33,26 @@
     text-align: center;
     margin-bottom: 50px;
 }
+.list h2:hover{
+    color: aqua;
+}
 
+.social{
+    position: absolute;
+    top: 600px;
+    
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+  color: gray;
+}
 
 .btn{
     
    position: absolute;
-    right:0px;
+    right:20px;
     top: 600px;
     font-size: 40px;
     cursor: pointer;

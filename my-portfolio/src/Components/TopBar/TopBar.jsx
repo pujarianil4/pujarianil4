@@ -4,8 +4,11 @@ import CloseIcon from '@material-ui/icons/Close';
 import FormatColorTextIcon from "@material-ui/icons/FormatColorText";
 import FlareIcon from '@material-ui/icons/Flare';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { themeHandler } from '../../Redux/Action';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 const areEqual=(prev,next)=>{
 
     if(prev.topbar===next.topbar ){
@@ -17,11 +20,12 @@ const areEqual=(prev,next)=>{
    
 }
 
-const TopBar = React.memo(({theme,setTheme,handleTopBar,topbar,handleScroll}) => {
+const TopBar = React.memo(({handleTopBar,topbar,handleScroll}) => {
 
+  const theme= useSelector((state)=> state.theme)
   const dispatch=useDispatch()
   const handletheme=(tm)=>{
-    handleTopBar()
+ 
  
     dispatch(themeHandler())
   }
@@ -68,6 +72,12 @@ const handleBar=(item)=>{
         {theme==="light"? <FlareIcon fontSize="large" className={styles.btn} onClick={()=>  handletheme("dark")}/>
        : <NightsStayIcon fontSize="large" className={styles.btn} onClick={()=> handletheme("light")} />
             } 
+
+            <div className={styles.social}>
+             <a style={style} href="https://github.com/pujarianil4" target="_blank"> <GitHubIcon fontSize="large" /></a>
+             <a style={style} href="https://github.com/pujarianil4" target="_blank">  <LinkedInIcon fontSize="large" /></a>
+             <a style={style} href="https://github.com/pujarianil4" target="_blank">  <TwitterIcon fontSize="large" /></a>
+            </div>
         
        
         <div className={styles.list}>

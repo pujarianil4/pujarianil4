@@ -78,14 +78,12 @@ invoicing web application.
         <Tooltip title="Redux">
         <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" />
         </Tooltip>
-        <Tooltip title="NodeJS">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+        <Tooltip title="JSON">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png" />
         </Tooltip>
-        <Tooltip title="Express">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />
-        </Tooltip>
-        <Tooltip title="MongoDB">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
+     
+        <Tooltip title="FireBase">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" />
         </Tooltip> </div>
              </ProjectCard>
               </div>
@@ -103,21 +101,19 @@ web application.
         </div>
        
         <div className={styles.tech_stack}>
-        <Tooltip title="React">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+        <Tooltip title="HTML">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
         </Tooltip>
-        <Tooltip title="Redux">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" />
+        <Tooltip title="CSS">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
         </Tooltip>
-        <Tooltip title="NodeJS">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+        <Tooltip title="JavaScript">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
         </Tooltip>
-        <Tooltip title="Express">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />
+        <Tooltip title="JSON">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png" />
         </Tooltip>
-        <Tooltip title="MongoDB">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
-        </Tooltip>   </div>
+           </div>
              </ProjectCard>
               </div>
               <div>
@@ -141,15 +137,13 @@ India.
         <Tooltip title="Redux">
         <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" />
         </Tooltip>
-        <Tooltip title="NodeJS">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+        <Tooltip title="FireBase">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" />
         </Tooltip>
-        <Tooltip title="Express">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />
+        <Tooltip title="JSON">
+        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png" />
         </Tooltip>
-        <Tooltip title="MongoDB">
-        <img alt="logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
-        </Tooltip>
+      
          </div>
              </ProjectCard>
               </div>
