@@ -10,7 +10,7 @@
 
 <br />
 
-Hi, I'm [Anil Pujari](https://anilpujari.me/), As a Full Stack Blockchain Engineer, I specialize in developing decentralized applications using ReactJS, NodeJS, Solidity, and other web technologies. My passion for writing clean and scalable code combined with my analytical problem-solving skills allows me to create robust, bug-free applications that deliver exceptional results. With extensive experience in building blockchain-based solutions, I have a deep understanding of the underlying technologies and their implementation. As a collaborative team player, I excel in working in cross-functional teams and have a proven track record of successfully delivering complex projects on time. I am constantly learning and exploring new technologies to stay ahead of the curve in the rapidly evolving world of blockchain and Web3
+Hi, I'm [Anil Pujari](https://pujarianil4.github.io/#/), As a Full Stack Blockchain Engineer, I specialize in developing decentralized applications using ReactJS, NodeJS, Solidity, and other web technologies. My passion for writing clean and scalable code combined with my analytical problem-solving skills allows me to create robust, bug-free applications that deliver exceptional results. With extensive experience in building blockchain-based solutions, I have a deep understanding of the underlying technologies and their implementation. As a collaborative team player, I excel in working in cross-functional teams and have a proven track record of successfully delivering complex projects on time. I am constantly learning and exploring new technologies to stay ahead of the curve in the rapidly evolving world of blockchain and Web3
 
 
 
