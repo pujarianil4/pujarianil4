@@ -1,7 +1,7 @@
 ### hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 
-<a href="https://www.linkedin.com/in/anil-pujari-644282112/">
+<a href="https://www.linkedin.com/in/pujarianil/">
   <img align="left" alt="Anil Pujari's LinkedIN" width="22px" src="https://media.licdn.com/dms/image/v2/D4E0BAQFkiMXPKAXo0Q/company-logo_100_100/company-logo_100_100/0/1719404287274/linkedin_social_selling_logo?e=1733961600&v=beta&t=u98lpxNPMVejUKouuUlO1CPO1j892JKpjWYG7F4dVhw" />
 </a>
 
@@ -10,7 +10,7 @@
 
 <br />
 
-Hi, I'm [Anil Pujari](https://anilpujari.me/), a passionate Full Stack Web Developer and a freelance software engineer from India. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.
+Hi, I'm [Anil Pujari](https://anilpujari.me/), As a Full Stack Blockchain Engineer, I specialize in developing decentralized applications using ReactJS, NodeJS, Solidity, and other web technologies. My passion for writing clean and scalable code combined with my analytical problem-solving skills allows me to create robust, bug-free applications that deliver exceptional results. With extensive experience in building blockchain-based solutions, I have a deep understanding of the underlying technologies and their implementation. As a collaborative team player, I excel in working in cross-functional teams and have a proven track record of successfully delivering complex projects on time. I am constantly learning and exploring new technologies to stay ahead of the curve in the rapidly evolving world of blockchain and Web3
 
 
 
