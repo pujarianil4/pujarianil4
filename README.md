@@ -2,7 +2,7 @@
 
 
 <a href="https://www.linkedin.com/in/pujarianil/">
-  <img align="left" alt="Anil Pujari's LinkedIN" width="22px" src="https://media.licdn.com/dms/image/v2/D4E0BAQFkiMXPKAXo0Q/company-logo_100_100/company-logo_100_100/0/1719404287274/linkedin_social_selling_logo?e=1733961600&v=beta&t=u98lpxNPMVejUKouuUlO1CPO1j892JKpjWYG7F4dVhw" />
+  <img align="left" alt="Anil Pujari's LinkedIN" width="22px" src="https://imgs.search.brave.com/GCx9vBWvld_E8MRVN1IovmyCDFLEujdcdswlrZkeSoE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2Y4L0xpbmtlZElu/X2ljb25fY2lyY2xl/LnN2Zw" />
 </a>
 
 
